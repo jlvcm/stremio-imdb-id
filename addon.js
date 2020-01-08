@@ -41,7 +41,7 @@ builder.defineCatalogHandler(args => {
 		if(args.type == 'search' && args.id=='search_imdb' && args.extra.search){
 			id = args.extra.search.trim().match(/^(tt)?(\d{7,})$/);
 			if(id){
-				id = 'tt'+parseInt(id[2], 10);
+				id = 'tt'+parseInt(id[2], 10).toString().padStart(7, "0");
 				request('https://www.imdb.com/title/'+id, function (error, response, html) {
 					if (!error && response.statusCode == 200) {
 						const $ = cheerio.load(html,{ xmlMode: true });
