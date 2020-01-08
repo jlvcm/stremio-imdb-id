@@ -38,7 +38,7 @@ const builder = new addonBuilder(manifest)
 builder.defineCatalogHandler(args => {
 	return new Promise((resolve, reject) => {
 		var id;
-		if(args.type == 'search'){
+		if(args.type == 'search' && args.id=='search_imdb' && args.extra.search){
 			id = args.extra.search.trim().match(/^(tt)?(\d{7,8})$/);
 			if(id){
 				id = 'tt'+id[2];
