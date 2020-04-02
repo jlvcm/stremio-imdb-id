@@ -1,6 +1,6 @@
 {
 	"name": "stremio-imdb-id",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "search IMDB by ID",
 	"engines": {
 		"node": "12.x"
