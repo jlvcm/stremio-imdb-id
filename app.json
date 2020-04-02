@@ -1,0 +1,7 @@
+{
+  "name": "Stremio imdb id search",
+  "description": "search movies by IMDB id ",
+  "repository": "https://github.com/jlvcm/stremio-imdb-id",
+  "logo": "https://m.media-amazon.com/images/G/01/IMDb/BG_square._CB1509067564_SY230_SX307_AL_.png",
+  "keywords": ["node", "stremio", "imdbid"]
+}
